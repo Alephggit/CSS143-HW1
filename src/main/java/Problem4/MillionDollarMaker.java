@@ -16,11 +16,9 @@ public class MillionDollarMaker {
 
         CompoundingResult result = new CompoundingResult(); // which constructor does this call?
 
-        /*
-        TODO: add your solution
-         */
+
 
         return result;
-        //ok
     }
+    //ok
 }
