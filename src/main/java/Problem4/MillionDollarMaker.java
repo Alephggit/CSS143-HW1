@@ -9,16 +9,31 @@ public class MillionDollarMaker {
 
     // Do not change signature (function name, parameter variable type, and return type)
     // OK to change parameter variable names. In fact, are the parameter names bad and why?
-    public static CompoundingResult calculate(float a,
-                                              float b,
-                                              int c,
-                                              float d) {
+    // yes the parameter names are bad. The reason being that a,b,c,d make it the code harder to read.
+
+    /**
+     *Worked on the calculate method after class whith Vinnie.
+     */
+    public static CompoundingResult calculate(float initialDeposit, float monthlyContribution, int lengthInYears, float annualInterestRate){
 
         CompoundingResult result = new CompoundingResult(); // which constructor does this call?
 
-        /*
-        TODO: add your solution
-         */
+        if (annualInterestRate < -100 || annualInterestRate > 100) {
+            // Handle invalid interest rate
+            return result;
+        }
+
+        float monthlyInterestRate = annualInterestRate / 100 / MONTHS_PER_YEAR;
+        float totalMonths = lengthInYears * MONTHS_PER_YEAR;
+
+        float accumulated = initialDeposit;
+        for (int month = 0; month < totalMonths; month++) {
+            accumulated += monthlyContribution;
+            accumulated = (1 + monthlyInterestRate);
+        }
+
+        result.setInvested(initialDeposit + monthlyContribution * totalMonths);
+        result.setAccumulated(accumulated);
 
         return result;
     }

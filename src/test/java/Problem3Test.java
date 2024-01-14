@@ -11,9 +11,28 @@ public class Problem3Test {
 
     // Okay to change the content of this function
     // DO NOT REMOVE OR CHANGE the signature
+
     @Test
+    /**
+     * worked testSumOfNonUnique method with vinnie.
+     */
     public void testSumOfNonUnique() {
-        assertTrue(false); // TODO: Place-holder. Replace with your tests.
+        int[] test1 = {3};
+        assertEquals(0, Problem3.SumOfNonUnique(test1));
+
+        int[] test2 = {3, 2};
+        assertEquals(0, Problem3.SumOfNonUnique(test2));
+
+        int[] test3 = {2, 3, 2};
+        assertEquals(4, Problem3.SumOfNonUnique(test3));
+
+        int[] test4 = {2, 4, 2, 1, 4, -5, 4};
+        assertEquals(16, Problem3.SumOfNonUnique(test4));
+
+        int[] test5 = {1, 1, 1, 2, 3, 3, 4, 5, 5, 5, 5};
+        assertEquals(29, Problem3.SumOfNonUnique(test5));
+
+
     }
 
     @Test
