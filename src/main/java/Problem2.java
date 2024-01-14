@@ -14,5 +14,6 @@ public class Problem2 {
         }
     }
     // TODO: answers "how many times of comparison for an array of size n?"
-    //ok
+
+    //
 }
