@@ -8,4 +8,5 @@ public class Problem1 {
     // TODO: answers "how would you prove your code is correct?". "ChatGPT says so" doesn't count as a good answer.
 
     // TODO: remove all the comment of "TODOs" and "Placeholder" once the homework is done. In other files too.
+    //ok
 }

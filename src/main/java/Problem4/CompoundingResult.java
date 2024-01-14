@@ -47,5 +47,6 @@ public class CompoundingResult {
                 ", accumulated=" + accumulated +
                 '}';
         // IntelliJ auto-generated this
+        //ok
     }
 }
